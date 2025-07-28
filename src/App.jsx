@@ -127,7 +127,7 @@ const App = () => {
       ) : (
         <div className={`main-content ${selectedGroup ? "hidden" : ""}`}>
           <div className="hero-bg">
-            <img src="/image-preview.png" alt="hero" />
+            <img src="/Notepad/image-preview.png" alt="hero" />
           </div>
           <h1 className="hero-title">Pocket Notes</h1>
           <p className="hero-subtitle">
