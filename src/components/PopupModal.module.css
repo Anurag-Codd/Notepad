@@ -1,0 +1,138 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  z-index: 20;
+}
+
+.modalContent {
+  background-color: white;
+  border-radius: 6px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  width: 95%;
+  max-width: 450px;
+}
+
+.modalTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.modalForm {
+  display: flex; 
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 20px;
+}
+
+.formLabel {
+  font-size: 15px;
+}
+
+.formInput {
+  flex-grow: 1;
+  padding: 6px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 50px;
+  font-size: 15px;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.formInput:focus {
+  outline: none;
+  border-color: #a0a0a0;
+  box-shadow: 0 0 0 2px rgba(160, 160, 160, 0.2);
+}
+
+.colorOptions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.colorOption {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+  transition: all 200ms ease-in-out;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.colorOption:hover {
+  transform: scale(1.1);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.colorOption.selected {
+  border-color: black;
+  transform: scale(1.05);
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.6);
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 25px;
+}
+
+.button {
+  padding: 4px 20px;
+  background-color: #1e40af;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 200ms ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.button:hover {
+  background-color: #557ee6;
+}
+
+@media (max-width: 768px) {
+  .modalContent {
+    padding: 20px;
+    max-width: 95%;
+  }
+
+  .modalTitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .formLabel {
+    font-size: 15px;
+  }
+
+  .formInput {
+    padding: 10px 12px;
+    font-size: 15px;
+  }
+
+  .colorOption {
+    height: 25px;
+    width: 25px;
+  }
+
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
