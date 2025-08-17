@@ -1,12 +1,69 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Notepad
 
-Currently, two official plugins are available:
+Notepad is a simple, modern note-taking application. Create, organize, and manage your notes efficiently with a clean interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Create and manage note groups
+- Add, edit, and delete notes
+- Responsive sidebar for navigation
+- Modal popup for adding new groups
+- Data is stored in the browser using IndexedDB for persistence
 
-## Expanding the ESLint configuration
+## Tech Stack
+- React
+- Vite
+- CSS Modules
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+### Prerequisites
+- Node.js (v16 or above recommended)
+- pnpm (or npm/yarn)
+
+### Installation
+1. Clone the repository:
+	```bash
+	git clone <repo-url>
+	cd notepad-react
+	```
+2. Install dependencies:
+	```bash
+	pnpm install
+	# or
+	npm install
+	# or
+	yarn install
+	```
+3. Start the development server:
+	```bash
+	pnpm dev
+	# or
+	npm run dev
+	# or
+	yarn dev
+	```
+4. Open [http://localhost:5173](http://localhost:5173) to view the app.
+
+## Project Structure
+```
+notepad-react/
+├── public/
+├── src/
+│   ├── components/
+│   ├── context/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── ...
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## Scripts
+- `dev` - Start the development server
+- `build` - Build for production
+- `preview` - Preview the production build
+
+## License
+This project is licensed under the MIT License.
